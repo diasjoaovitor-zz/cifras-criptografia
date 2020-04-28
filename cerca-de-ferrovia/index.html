@@ -54,7 +54,7 @@
         }
 
         main .button {
-            sentence-align: center;
+            text-align: center;
             padding: 24px 0 30px;
         }
 
@@ -162,7 +162,7 @@
         }
 
         function encryptSentence() {
-            let sentenceValue = replaceSpecialChars(sentence.value)
+            let sentenceValue = replaceSpecialChars(sentence.value.toUpperCase())
             
             for(let a = 0; a < sentenceValue.length; a++) {
                 if(a%2 == 0)
